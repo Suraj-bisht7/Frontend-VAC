@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – log in or sign up</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            max-width: 980px;
+            width: 100%;
+            padding: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Left Side: Brand Text */
+        .brand-section {
+            max-width: 500px;
+            padding-bottom: 100px;
+        }
+
+        .brand-section img {
+            height: 106px;
+            margin: -28px;
+        }
+
+        .brand-section h2 {
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 32px;
+            margin-top: 20px;
+            color: #1c1e21;
+        }
+
+        /* Right Side: Login Card */
+        .form-section {
+            width: 396px;
+            background: #ffffff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-section input {
+            width: 100%;
+            height: 52px;
+            padding: 14px 16px;
+            margin-bottom: 12px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+            outline: none;
+        }
+
+        .form-section input:focus {
+            border-color: #1877f2;
+            box-shadow: 0 0 0 2px #e7f3ff;
+        }
+
+        .login-btn {
+            width: 100%;
+            height: 48px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 16px;
+            transition: background-color 0.2s;
+        }
+
+        .login-btn:hover {
+            background-color: #166fe5;
+        }
+
+        .forgot-link {
+            color: #1877f2;
+            font-size: 14px;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .forgot-link:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #dadde1;
+            margin-bottom: 20px;
+        }
+
+        .create-btn {
+            background-color: #42b72a;
+            border: none;
+            border-radius: 6px;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 0 16px;
+            height: 48px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .create-btn:hover {
+            background-color: #36a420;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+
+            .brand-section {
+                padding-bottom: 20px;
+                max-width: 400px;
+            }
+
+            .brand-section h2 {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .brand-section img {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Side -->
+        <div class="brand-section">
+            <img src="https://fbcdn.net" alt="Facebook">
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+        </div>
+
+        <!-- Right Side -->
+        <div class="form-section">
+            <form action="#">
+                <input type="text" placeholder="Email address or phone number" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="login-btn">Log in</button>
+                <a href="#" class="forgot-link">Forgotten password?</a>
+                <hr>
+                <button type="button" class="create-btn">Create new account</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
