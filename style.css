@@ -1,142 +1,49 @@
-/* 1. Global Setup */
-* {
+*{
+    box-sizing: border-box ;
+}
+
+body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #202918;
+    line-height: 1.6;
 }
 
-body {
-    background-color: #fafafa; /* Instagram's signature clean off-white background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-}
-
-/* 2. Main Wrapper Box */
-.main-container {
-    width: 350px; /* The exact standard width of Instagram's card mobile/web wrapper */
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* 3. The Login Card styling */
-.login-card {
-    background-color: #ffffff;
-    border: 1px solid #dbdbdb; /* Light gray border instead of Facebook's drop shadow */
-    padding: 40px 40px 20px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.header{
+    background: #304e9b;;
+    color:white;
     text-align: center;
+    padding:35px 15px ;
 }
 
-/* 4. Instagram Font Logo */
-.instagram-logo {
-    font-family: 'Times New Roman', Times, serif; /* Simple backup; normally an SVG/Image */
-    font-style: italic;
-    font-size: 3.2rem;
-    margin-bottom: 30px;
-    font-weight: 500;
+.header h1{
+    margin: 0;
+    font-size: 36px;
 }
 
-/* 5. Form Elements */
-form {
-    width: 100%;
+header p{
+    margin-bottom: 0;
+}
+
+.container{
+    width:90%;
+    max-width: 1100px;
+    margin:30px auto;
+
+}
+
+.cotrols{
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-form input {
-    width: 100%;
-    height: 38px;
-    background: #fafafa;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-    padding: 9px 8px;
-    font-size: 12px;
-    outline: none;
-    color: #262626;
-}
-
-form input:focus {
-    border-color: #a8a8a8; /* Darkens border subtly on click */
-}
-
-/* 6. Instagram Login Button */
-.btn-login {
-    background-color: #4cb5f9; /* Instagram's lighter blue brand color */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    height: 32px;
-    margin-top: 8px;
-    cursor: pointer;
-}
-
-.btn-login:hover {
-    background-color: #0095f6; /* Deepens when active/filled */
-}
-
-/* 7. The "OR" Section Breakdown */
-.or-separator {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 20px 0;
-}
-
-.or-separator .line {
-    flex: 1;
-    height: 1px;
-    background-color: #dbdbdb;
-}
-
-.or-separator .or-text {
-    color: #8e8e8e;
-    font-size: 13px;
-    font-weight: 600;
-    margin: 0 18px;
-}
-
-/* 8. Alternate Login Options */
-.btn-fb-login {
-    background: none;
-    border: none;
-    color: #385185; /* Dark corporate Facebook blue */
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
-.forgot-password {
-    color: #00376b;
-    font-size: 12px;
-    text-decoration: none;
-}
+input{
+    flex:1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid#ccd2df;
+    border-radius: 8px;
 
-/* 9. Separate Bottom Signup Card Box */
-.signup-card {
-    background-color: #ffffff;
-    border: 1px solid #dbdbdb;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #262626;
-}
-
-.signup-link {
-    color: #0095f6;
-    text-decoration: none;
-    font-weight: 600;
 }
